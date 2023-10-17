@@ -1,0 +1,106 @@
+
+
+body {
+  background: linear-gradient(
+    90deg,
+    #d06219,
+     #ffb700
+  );
+  font-family: 'Open Sans', sans-serif;
+  margin: 5rem;
+  text-align: center;
+  color: white;
+}
+
+input {
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.generationButton {
+  color: rgb(20, 21, 20);
+  background-color: rgb(255, 0, 102);
+}
+#imageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  color: rgb(0, 255, 94);
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: rgba(243, 239, 239, 0.35) 0px 5px 15px;
+  background-color: rgba(200, 202, 202, 0.92);
+}
+
+.card-body img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+}
+.card-body img:hover {
+  animation: shake 0.3s infinite;
+}
+.card-footer p {
+  color: black;
+  font-size: 1rem;
+}
+
+.card-footer {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  
+  .card {
+    padding: 1rem;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(0deg);
+  }
+  
+}
+

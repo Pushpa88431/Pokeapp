@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pokedex.css" />
+    <title>Pokeapp</title>
+  </head>
+  <body>
+    <div>
+    
+      <h1>Pokemon Cards</h1>
+
+      <div class="GenerationInfo">
+      <button id="btn1" class="generationButton" onclick="loadImage(1)">GenI</button>
+      <button id="btn2" class="generationButton" onclick="loadImage(2)">GeneII</button>
+      <button id="btn3" class="generationButton" onclick="loadImage(3)">GenIII</button>
+      <button id="btn4" class="generationButton" onclick="loadImage(4)">GenIV</button>
+      <button id="btn5" class="generationButton" onclick="loadImage(5)">GenV</button>
+      <button id="btn6" class="generationButton" onclick="loadImage(6)">GenVI</button>
+      <button id="btn7" class="generationButton" onclick="loadImage(7)">GenVII</button>
+      <button id="btn8" class="generationButton" onclick="loadImage(8)">GenVIII</button>
+      <button id="btn9" class="generationButton" onclick="loadImage(9)">GenIX</button>
+    </div>
+    <div class="msg">
+      <p id="result">To see pokemons, choose generations first....</p>
+    </div>
+      <br>
+      <input id="searchBar" type="text" />
+      
+      <div id="imageContainer"></div>
+    </div>
+    <script src="pokedex.js"></script>
+  </body>
+</html>
