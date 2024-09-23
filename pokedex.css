@@ -1,54 +1,70 @@
-
-
 body {
-  background: linear-gradient(
-    90deg,
-    #d06219,
-     #ffb700
-  );
-  font-family: 'Open Sans', sans-serif;
+  background: url(aesthetic-7781518_1280.jpg);
+  font-family: "Open Sans", sans-serif;
   margin: 5rem;
   text-align: center;
   color: white;
 }
+h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  font-style: oblique;
+  color: aliceblue;
+  text-shadow: #820d82 10px 0 10px;
+  margin-top: 50px;
+}
 
 input {
-  padding: 0.4rem;
+  padding: 20px;
   margin-bottom: 2rem;
   font-size: inherit;
   font-family: inherit;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(130, 77, 130);
 }
 
 .generationButton {
-  color: rgb(20, 21, 20);
-  background-color: rgb(255, 0, 102);
+  color: white;
+  font-weight: bold;
+  background-color: #630b63;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(224, 204, 224);
+}
+.generationButton:hover {
+  cursor: pointer;
+  background-color: rgb(109, 153, 146);
+  transform: rotateY(45deg);
 }
 #imageContainer {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
   gap: 1rem;
-  color: rgb(0, 255, 94);
+  color: white;
+  font-weight: bolder;
 }
 
 .card {
   width: 200px;
-  height: 300px;
+  height: 250px;
   margin: 25px;
   border-radius: 5px;
-  padding: 2rem;
-  box-shadow: rgba(243, 239, 239, 0.35) 0px 5px 15px;
-  background-color: rgba(200, 202, 202, 0.92);
+  padding: 10px;
+  box-shadow: 3px 3px 3px rgb(224, 204, 224);
+  background-color: rgb(158, 86, 158);
 }
 
 .card-body img {
   object-fit: cover;
-  width: 100%;
+  width: 70%;
 }
 
 .card-body {
-  padding: 15px;
+  padding: 10px;
 }
 .card-body img:hover {
   animation: shake 0.3s infinite;
@@ -62,7 +78,6 @@ input {
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  
   .card {
     padding: 1rem;
   }
@@ -101,6 +116,4 @@ input {
   100% {
     transform: translate(1px, -2px) rotate(0deg);
   }
-  
 }
-
